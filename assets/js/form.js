@@ -65,6 +65,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     //Function test email
     function emailTest(input) {
-        return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2.8})+$/.test(input.value);
+        return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
     }
 });
