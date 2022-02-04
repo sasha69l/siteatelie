@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <title>BrainsCloud | Home</title>
+    
+    <style>
+       @font-face {
+    	font-family: 'Futura PT Bold';
+    	src: url('../fonts/futura_pt_bold.eot'); /* IE 9 Compatibility Mode */
+    	src: url('../fonts/futura_pt_bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    		url('../fonts/futura_pt_bold.woff2') format('woff2'), /* Super Modern Browsers */
+    		url('../fonts/futura_pt_bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    		url('../fonts/futura_pt_bold.ttf') format('truetype'), /* Safari, Android, iOS */
+    		url('../fonts/futura_pt_bold.svg#futura_pt_bold') format('svg'); /* Chrome < 4, Legacy iOS */
+    }
+    
+    @font-face {
+    	font-family: 'Futura PT Bold Oblique';
+    	src: url('../fonts/futura_pt_bold_oblique.eot'); /* IE 9 Compatibility Mode */
+    	src: url('../fonts/futura_pt_bold_oblique.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    		url('../fonts/futura_pt_bold_oblique.woff2') format('woff2'), /* Super Modern Browsers */
+    		url('../fonts/futura_pt_bold_oblique.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    		url('../fonts/futura_pt_bold_oblique.ttf') format('truetype'), /* Safari, Android, iOS */
+    		url('../fonts/futura_pt_bold_oblique.svg#futura_pt_bold_oblique') format('svg'); /* Chrome < 4, Legacy iOS */
+    }
+    
+    @font-face {
+    	font-family: 'Futura PT Book';
+    	src: url('../fonts/futura_pt_book.eot'); /* IE 9 Compatibility Mode */
+    	src: url('../fonts/futura_pt_book.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    		url('../fonts/futura_pt_book.woff2') format('woff2'), /* Super Modern Browsers */
+    		url('../fonts/futura_pt_book.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    		url('../fonts/futura_pt_book.ttf') format('truetype'), /* Safari, Android, iOS */
+    		url('../fonts/futura_pt_book.svg#futura_pt_book') format('svg'); /* Chrome < 4, Legacy iOS */
+    }
+    
+    @font-face {
+    	font-family: 'Futura PT Book Oblique';
+    	src: url('../fonts/futura_pt_book_oblique.eot'); /* IE 9 Compatibility Mode */
+    	src: url('../fonts/futura_pt_book_oblique.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    		url('../fonts/futura_pt_book_oblique.woff2') format('woff2'), /* Super Modern Browsers */
+    		url('../fonts/futura_pt_book_oblique.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    		url('../fonts/futura_pt_book_oblique.ttf') format('truetype'), /* Safari, Android, iOS */
+    		url('../fonts/futura_pt_book_oblique.svg#futura_pt_book_oblique') format('svg'); /* Chrome < 4, Legacy iOS */
+    }
+    
+    @font-face {
+    	font-family: 'Futura PT Cond Bold';
+    	src: url('../fonts/futura_pt_cond_bold.eot'); /* IE 9 Compatibility Mode */
+    	src: url('../fonts/futura_pt_cond_bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    		url('../fonts/futura_pt_cond_bold.woff2') format('woff2'), /* Super Modern Browsers */
+    		url('../fonts/futura_pt_cond_bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    		url('../fonts/futura_pt_cond_bold.ttf') format('truetype'), /* Safari, Android, iOS */
+    		url('../fonts/futura_pt_cond_bold.svg#futura_pt_cond_bold') format('svg'); /* Chrome < 4, Legacy iOS */
+    }
+    
+    @font-face {
+    	font-family: 'Futura PT Cond Bold Oblique';
+    	src: url('../fonts/futura_pt_cond_bold_oblique.eot'); /* IE 9 Compatibility Mode */
+    	src: url('../fonts/futura_pt_cond_bold_oblique.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    		url('../fonts/futura_pt_cond_bold_oblique.woff2') format('woff2'), /* Super Modern Browsers */
+    		url('../fonts/futura_pt_cond_bold_oblique.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    		url('../fonts/futura_pt_cond_bold_oblique.ttf') format('truetype'), /* Safari, Android, iOS */
+    		url('../fonts/futura_pt_cond_bold_oblique.svg#futura_pt_cond_bold_oblique') format('svg'); /* Chrome < 4, Legacy iOS */
+    }
+    
+    @font-face {
+    	font-family: 'Futura PT Cond Book';
+    	src: url('../fonts/futura_pt_cond_book.eot'); /* IE 9 Compatibility Mode */
+    	src: url('../fonts/futura_pt_cond_book.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    		url('../fonts/futura_pt_cond_book.woff2') format('woff2'), /* Super Modern Browsers */
+    		url('../fonts/futura_pt_cond_book.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    		url('../fonts/futura_pt_cond_book.ttf') format('truetype'), /* Safari, Android, iOS */
+    		url('../fonts/futura_pt_cond_book.svg#futura_pt_cond_book') format('svg'); /* Chrome < 4, Legacy iOS */
+    }
+    
+    @font-face {
+    	font-family: 'Futura PT Cond Book Oblique';
+    	src: url('../fonts/futura_pt_cond_book_oblique.eot'); /* IE 9 Compatibility Mode */
+    	src: url('../fonts/futura_pt_cond_book_oblique.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    		url('../fonts/futura_pt_cond_book_oblique.woff2') format('woff2'), /* Super Modern Browsers */
+    		url('../fonts/futura_pt_cond_book_oblique.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    		url('../fonts/futura_pt_cond_book_oblique.ttf') format('truetype'), /* Safari, Android, iOS */
+    		url('../fonts/futura_pt_cond_book_oblique.svg#futura_pt_cond_book_oblique') format('svg'); /* Chrome < 4, Legacy iOS */
+    }
+    
+    @font-face {
+    	font-family: 'Futura PT Cond Extra Bold';
+    	src: url('../fonts/futura_pt_cond_extra_bold.eot'); /* IE 9 Compatibility Mode */
+    	src: url('../fonts/futura_pt_cond_extra_bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    		url('../fonts/futura_pt_cond_extra_bold.woff2') format('woff2'), /* Super Modern Browsers */
+    		url('../fonts/futura_pt_cond_extra_bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    		url('../fonts/futura_pt_cond_extra_bold.ttf') format('truetype'), /* Safari, Android, iOS */
+    		url('../fonts/futura_pt_cond_extra_bold.svg#futura_pt_cond_extra_bold') format('svg'); /* Chrome < 4, Legacy iOS */
+    }
+    
+    @font-face {
+    	font-family: 'Futura PT Cond Extra Bold Oblique';
+    	src: url('../fonts/futura_pt_cond_extra_bold_oblique.eot'); /* IE 9 Compatibility Mode */
+    	src: url('../fonts/futura_pt_cond_extra_bold_oblique.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    		url('../fonts/futura_pt_cond_extra_bold_oblique.woff2') format('woff2'), /* Super Modern Browsers */
+    		url('../fonts/futura_pt_cond_extra_bold_oblique.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    		url('../fonts/futura_pt_cond_extra_bold_oblique.ttf') format('truetype'), /* Safari, Android, iOS */
+    		url('../fonts/futura_pt_cond_extra_bold_oblique.svg#futura_pt_cond_extra_bold_oblique') format('svg'); /* Chrome < 4, Legacy iOS */
+    }
+    
+    @font-face {
+    	font-family: 'Futura PT Cond Medium';
+    	src: url('../fonts/futura_pt_cond_medium.eot'); /* IE 9 Compatibility Mode */
+    	src: url('../fonts/futura_pt_cond_medium.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    		url('../fonts/futura_pt_cond_medium.woff2') format('woff2'), /* Super Modern Browsers */
+    		url('../fonts/futura_pt_cond_medium.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    		url('../fonts/futura_pt_cond_medium.ttf') format('truetype'), /* Safari, Android, iOS */
+    		url('../fonts/futura_pt_cond_medium.svg#futura_pt_cond_medium') format('svg'); /* Chrome < 4, Legacy iOS */
+    }
+    
+    @font-face {
+    	font-family: 'Futura PT Cond Medium Oblique';
+    	src: url('../fonts/futura_pt_cond_medium_oblique.eot'); /* IE 9 Compatibility Mode */
+    	src: url('../fonts/futura_pt_cond_medium_oblique.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    		url('../fonts/futura_pt_cond_medium_oblique.woff2') format('woff2'), /* Super Modern Browsers */
+    		url('../fonts/futura_pt_cond_medium_oblique.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    		url('../fonts/futura_pt_cond_medium_oblique.ttf') format('truetype'), /* Safari, Android, iOS */
+    		url('../fonts/futura_pt_cond_medium_oblique.svg#futura_pt_cond_medium_oblique') format('svg'); /* Chrome < 4, Legacy iOS */
+    }
+    
+    @font-face {
+    	font-family: 'Futura PT Demi';
+    	src: url('../fonts/futura_pt_demi.eot'); /* IE 9 Compatibility Mode */
+    	src: url('../fonts/futura_pt_demi.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    		url('../fonts/futura_pt_demi.woff2') format('woff2'), /* Super Modern Browsers */
+    		url('../fonts/futura_pt_demi.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    		url('../fonts/futura_pt_demi.ttf') format('truetype'), /* Safari, Android, iOS */
+    		url('../fonts/futura_pt_demi.svg#futura_pt_demi') format('svg'); /* Chrome < 4, Legacy iOS */
+    }
+    
+    @font-face {
+    	font-family: 'Futura PT Demi Oblique';
+    	src: url('../fonts/futura_pt_demi_oblique.eot'); /* IE 9 Compatibility Mode */
+    	src: url('../fonts/futura_pt_demi_oblique.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    		url('../fonts/futura_pt_demi_oblique.woff2') format('woff2'), /* Super Modern Browsers */
+    		url('../fonts/futura_pt_demi_oblique.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    		url('../fonts/futura_pt_demi_oblique.ttf') format('truetype'), /* Safari, Android, iOS */
+    		url('../fonts/futura_pt_demi_oblique.svg#futura_pt_demi_oblique') format('svg'); /* Chrome < 4, Legacy iOS */
+    }
+    
+    @font-face {
+    	font-family: 'Futura PT Extra Bold';
+    	src: url('../fonts/futura_pt_extra_bold.eot'); /* IE 9 Compatibility Mode */
+    	src: url('../fonts/futura_pt_extra_bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    		url('../fonts/futura_pt_extra_bold.woff2') format('woff2'), /* Super Modern Browsers */
+    		url('../fonts/futura_pt_extra_bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    		url('../fonts/futura_pt_extra_bold.ttf') format('truetype'), /* Safari, Android, iOS */
+    		url('../fonts/futura_pt_extra_bold.svg#futura_pt_extra_bold') format('svg'); /* Chrome < 4, Legacy iOS */
+    }
+    
+    @font-face {
+    	font-family: 'Futura PT Extra Bold Oblique';
+    	src: url('../fonts/futura_pt_extra_bold_oblique.eot'); /* IE 9 Compatibility Mode */
+    	src: url('../fonts/futura_pt_extra_bold_oblique.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    		url('../fonts/futura_pt_extra_bold_oblique.woff2') format('woff2'), /* Super Modern Browsers */
+    		url('../fonts/futura_pt_extra_bold_oblique.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    		url('../fonts/futura_pt_extra_bold_oblique.ttf') format('truetype'), /* Safari, Android, iOS */
+    		url('../fonts/futura_pt_extra_bold_oblique.svg#futura_pt_extra_bold_oblique') format('svg'); /* Chrome < 4, Legacy iOS */
+    }
+    
+    @font-face {
+    	font-family: 'Futura PT Heavy';
+    	src: url('../fonts/futura_pt_heavy.eot'); /* IE 9 Compatibility Mode */
+    	src: url('../fonts/futura_pt_heavy.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    		url('../fonts/futura_pt_heavy.woff2') format('woff2'), /* Super Modern Browsers */
+    		url('../fonts/futura_pt_heavy.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    		url('../fonts/futura_pt_heavy.ttf') format('truetype'), /* Safari, Android, iOS */
+    		url('../fonts/futura_pt_heavy.svg#futura_pt_heavy') format('svg'); /* Chrome < 4, Legacy iOS */
+    }
+    
+    @font-face {
+    	font-family: 'Futura PT Heavy Oblique';
+    	src: url('../fonts/futura_pt_heavy_oblique.eot'); /* IE 9 Compatibility Mode */
+    	src: url('../fonts/futura_pt_heavy_oblique.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    		url('../fonts/futura_pt_heavy_oblique.woff2') format('woff2'), /* Super Modern Browsers */
+    		url('../fonts/futura_pt_heavy_oblique.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    		url('../fonts/futura_pt_heavy_oblique.ttf') format('truetype'), /* Safari, Android, iOS */
+    		url('../fonts/futura_pt_heavy_oblique.svg#futura_pt_heavy_oblique') format('svg'); /* Chrome < 4, Legacy iOS */
+    }
+    
+    @font-face {
+    	font-family: 'Futura PT Light';
+    	src: url('../fonts/futura_pt_light.eot'); /* IE 9 Compatibility Mode */
+    	src: url('../fonts/futura_pt_light.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    		url('../fonts/futura_pt_light.woff2') format('woff2'), /* Super Modern Browsers */
+    		url('../fonts/futura_pt_light.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    		url('../fonts/futura_pt_light.ttf') format('truetype'), /* Safari, Android, iOS */
+    		url('../fonts/futura_pt_light.svg#futura_pt_light') format('svg'); /* Chrome < 4, Legacy iOS */
+    }
+    
+    @font-face {
+    	font-family: 'Futura PT Light Oblique';
+    	src: url('../fonts/futura_pt_light_oblique.eot'); /* IE 9 Compatibility Mode */
+    	src: url('../fonts/futura_pt_light_oblique.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    		url('../fonts/futura_pt_light_oblique.woff2') format('woff2'), /* Super Modern Browsers */
+    		url('../fonts/futura_pt_light_oblique.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    		url('../fonts/futura_pt_light_oblique.ttf') format('truetype'), /* Safari, Android, iOS */
+    		url('../fonts/futura_pt_light_oblique.svg#futura_pt_light_oblique') format('svg'); /* Chrome < 4, Legacy iOS */
+    }
+    
+    @font-face {
+    	font-family: 'Futura PT Medium';
+    	src: url('../fonts/futura_pt_medium.eot'); /* IE 9 Compatibility Mode */
+    	src: url('../fonts/futura_pt_medium.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    		url('../fonts/futura_pt_medium.woff2') format('woff2'), /* Super Modern Browsers */
+    		url('../fonts/futura_pt_medium.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    		url('../fonts/futura_pt_medium.ttf') format('truetype'), /* Safari, Android, iOS */
+    		url('../fonts/futura_pt_medium.svg#futura_pt_medium') format('svg'); /* Chrome < 4, Legacy iOS */
+    }
+    
+    @font-face {
+    	font-family: 'Futura PT Medium Oblique';
+    	src: url('../fonts/futura_pt_medium_oblique.eot'); /* IE 9 Compatibility Mode */
+    	src: url('../fonts/futura_pt_medium_oblique.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    		url('../fonts/futura_pt_medium_oblique.woff2') format('woff2'), /* Super Modern Browsers */
+    		url('../fonts/futura_pt_medium_oblique.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    		url('../fonts/futura_pt_medium_oblique.ttf') format('truetype'), /* Safari, Android, iOS */
+    		url('../fonts/futura_pt_medium_oblique.svg#futura_pt_medium_oblique') format('svg'); /* Chrome < 4, Legacy iOS */
+    }
+    
+    
+    </style></head>
+<body>
+   
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <img src="assets/images/logo.svg" alt="Atelier">
+            </div>
+            <div class="header__nav">
+                <nav class="nav">
+                   <ul class="nav__list">
+                        <li>
+                            <a href="#" class="nav__link">Главная</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__link">О нас</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__link">Услуги</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__link">Портфолио</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__link" style="padding: 0;">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__contacts">
+                <img src="assets/images/telephone.svg" alt="Atelier">
+                <a href="tel: +380955410504" class="tel">+38 095 54-105-04</a>
+            </div>
+        </div>
+    </header>
+    
+    <div class="pre__slider"></div>
+    <div class="slider">
+        <div class="slider__container">
+            <div class="slider__wrapper">
+                <div class="slider__items">
+                    <div class="slider__item">
+                        <div class="slider__filter"></div>
+                        <div class="slider__item__inner">
+                            <span class="slider__item__title">
+                                <p>Atelier</p>
+                            </span>
+                            <span class="slider__item__desc">
+                                <p>— ателье по ремонту одежды в Ахтырке, которое вы так долго искали.</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                       <div class="slider__filter"></div>
+                        <div class="slider__item__inner">
+                            <span class="slider__item__title">
+                                <p>Ремонт одежды</p>
+                                <p>любой сложности</p>
+                            </span>
+                            <span class="slider__item__desc">
+                                <p>Креативный подход. Прямое общение с мастером. Высокое качество работы.</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                       <div class="slider__filter"></div>
+                        <div class="slider__item__inner">
+                            <span class="slider__item__title">
+                                Atelier
+                            </span>
+                            <span class="slider__item__desc">
+                                — ателье по ремонту одежды в Ахтырке, которое вы так долго искали.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                       <div class="slider__filter"></div>
+                        <div class="slider__item__inner">
+                            <span class="slider__item__title">
+                                Ремонт одежды любой сложности
+                            </span>
+                            <span class="slider__item__desc">
+                                Креативный подход. Прямое общение с мастером. Высокое качество работы.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                       <div class="slider__filter"></div>
+                        <div class="slider__item__inner">
+                            <span class="slider__item__title">
+                                Ремонт одежды любой сложности
+                            </span>
+                            <span class="slider__item__desc">
+                                Креативный подход. Прямое общение с мастером. Высокое качество работы.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
+            <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
+        </div>
+    </div>    
+    <div class="main">
+        <div class="main__container">
+            <div class="privelege__block">
+                <div class="privelege__container">
+                    <h2 class="privelege__text">
+                        Почему именно мы?
+                    </h2>
+                    <div class="privelege__items">
+                        <div class="privelege__item">
+                            <div class="privilege__icon">
+                                <img src="assets/images/pr1.svg" alt="icon1">
+                            </div>
+                            <div class="privilege__inner">
+                                <span class="privilege__item__title">
+                                    <p>Лучшие мастера</p>
+                                </span>
+                                <span class="privilege__item__desc">
+                                    <p>Наши швеи делают быстро и качественно</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="privelege__item">
+                            <div class="privilege__icon">
+                                <img src="assets/images/pr2.svg" alt="icon1">
+                            </div>
+                            <div class="privilege__inner">
+                                <span class="privilege__item__title">
+                                    <p>Приятные цены</p>
+                                </span>
+                                <span class="privilege__item__desc">
+                                    <p>Лучшие цены в городе, недорого и качественно</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="privelege__item">
+                            <div class="privilege__icon">
+                                <img src="assets/images/pr1.svg" alt="icon1">
+                            </div>
+                            <div class="privilege__inner">
+                                <span class="privilege__item__title">
+                                    <p>Краткие сроки</p>
+                                </span>
+                                <span class="privilege__item__desc">
+                                    <p>Выполняем роботу в сроки и качественно</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uslugi__block">
+                <div class="uslugi__container">
+                    <h2 class="uslugi__text">
+                        <p>Услуги</p>
+                    </h2>
+                    <div class="uslugi__items">
+                        <div class="uslugi__item">
+                            <img src="assets/images/us1.jpg" class="uslugi__photo" alt="Atelie">
+                            <div class="uslugi__inner">
+                                <h2 class="uslugi__title">
+                                Ремонт одежды
+                                </h2>
+                                <h2 class="uslugi__desc">
+                                Креативный подход. Высокое качество работы.Креативный подход.
+                                </h2>
+                                <a href="#" class="uslugi__button">Подробнее →</a>
+                            </div>
+                        </div>
+                        <div class="uslugi__item">
+                            <img src="assets/images/us1.jpg" class="uslugi__photo" alt="Atelie">
+                            <div class="uslugi__inner">
+                                <h2 class="uslugi__title">
+                                Пошив женской одежды
+                                </h2>
+                                <h2 class="uslugi__desc">
+                                Мы шьем женскую одежду по индивидуальным меркам.
+                                </h2>
+                                <a href="#" class="uslugi__button">Подробнее →</a>
+                            </div>
+                        </div>
+                        <div class="uslugi__item">
+                            <img src="assets/images/us1.jpg" class="uslugi__photo" alt="Atelie">
+                            <div class="uslugi__inner">
+                                <h2 class="uslugi__title">
+                                Ремонт меха
+                                </h2>
+                                <h2 class="uslugi__desc">
+                                Перекроим и отреставрируем любые меховые изделия.
+                                </h2>
+                                <a href="#" class="uslugi__button">Подробнее →</a>
+                            </div>
+                        </div>
+                        <div class="uslugi__item">
+                            <img src="assets/images/us1.jpg" class="uslugi__photo" alt="Atelie">
+                            <div class="uslugi__inner">
+                                <h2 class="uslugi__title">
+                                Ремонт кожи
+                                </h2>
+                                <h2 class="uslugi__desc">
+                                Креативный подход. Высокое качество работы.Креативный подход.
+                                </h2>
+                                <a href="#" class="uslugi__button">Подробнее →</a>
+                            </div>
+                        </div>
+                        <div class="uslugi__item">
+                            <img src="assets/images/us1.jpg" class="uslugi__photo" alt="Atelie">
+                            <div class="uslugi__inner">
+                                <h2 class="uslugi__title">
+                                Ремонт сумок
+                                </h2>
+                                <h2 class="uslugi__desc">
+                                Мы шьем женскую одежду по индивидуальным меркам.
+                                </h2>
+                                <a href="#" class="uslugi__button">Подробнее →</a>
+                            </div>
+                        </div>
+                        <div class="uslugi__item">
+                            <img src="assets/images/us1.jpg" class="uslugi__photo" alt="Atelie">
+                            <div class="uslugi__inner">
+                                <h2 class="uslugi__title">
+                                Пошив шуб
+                                </h2>
+                                <h2 class="uslugi__desc">
+                                Перекроим и отреставрируем любые меховые изделия.
+                                </h2>
+                                <a href="#" class="uslugi__button">Подробнее →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio__block">
+                <div class="portfolio__container">
+                    <h2 class="portfolio__text">
+                        Портфолио
+                    </h2>
+                    <div class="portfolio__photos">
+                        <div class="portfolio__photo">
+                            <img src="assets/images/ph1.jpg" alt="Atelie">
+                        </div>
+                        <div class="portfolio__photo">
+                            <img src="assets/images/ph1.jpg" alt="Atelie">
+                        </div>
+                        <div class="portfolio__photo">
+                            <img src="assets/images/ph1.jpg" alt="Atelie">
+                        </div>
+                        <div class="portfolio__photo">
+                            <img src="assets/images/ph1.jpg" alt="Atelie">
+                        </div>
+                        <div class="portfolio__photo">
+                            <img src="assets/images/ph1.jpg" alt="Atelie">
+                        </div>
+                        <div class="portfolio__photo">
+                            <img src="assets/images/ph1.jpg" alt="Atelie">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="aboutus__block">
+                <div class="aboutus__container">
+                    <div class="aboutus__left">
+                        <h2 class="aboutus__title">О нашем ателье</h2>
+                        <h2 class="aboutus__title">Мы - профессионалы своего дела</h2>
+                        <h2 class="aboutus__desc">
+                            Нашей главной специализацией является производство клематисов. В нашей коллекции имеется более 450 видов и сортов клематиса, но для коммерческих целей мы производим только немногим более 280 экземпляров клематиса Ломоноса – клематисы с большим и маленьким цветком, а также стелющиеся формы клематиса в широком диапазоне.
+                            <br>
+                            <br>
+                            У нас также есть дополнительная специальность вьющиеся растения которые могут расти в саду в польских климатических условиях; мы производим более сотни видов и сортов таких растений.
+                        </h2>
+                        <a href="#" class="aboutus_more">Читать больше →</a>
+                    </div>
+                    <div class="aboutus__right"></div>
+                </div>
+            </div>
+            <div class="form__block">
+                <div class="form__container">
+                    <form action="#" id="form" class="form">
+                        <h2 class="form__title">Есть вопросы? Задавайте!</h2>
+                        <div class="form__items">
+                            <div class="form__row">
+                                <div class="form__item">
+                                    <input type="text" id="formName" placeholder="Введите имя" name="name" class="form__input _req">
+                                    <span class="input__text__error">Обязательное поле</span>
+                                </div>
+                                <div class="form__item">
+                                    <input type="text" id="formEmail" placeholder="Введите E-mail" name="email" class="form__input _req _email">
+                                    <span class="input__text__error">Обязательное поле</span>
+                                </div>
+                                <div class="form__item">
+                                    <input type="text" id="formTelephone" placeholder="Введите телефон" name="telephone" class="form__input _req">
+                                    <span class="input__text__error">Обязательное поле</span>
+                                </div>
+                            </div>
+                            <div class="form__row__area">
+                                <div class="form__item">
+                                    <textarea name="messege" id="formMessage" class="form__input" placeholder="Введите сообщение"></textarea>
+                                </div>
+                                <button type="submit" class="formButton"></button>
+                            </div>
+                            <div class="form__item">
+                                <div class="form__checkbox">
+                                    <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req">
+                                    <label for="formAgreement" class="checkbox__label">
+                                        <span>Я согласен на обработку моих <a href="#">персональных данных</a>.
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__elements">
+                <div class="footer__element"></div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/form.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
